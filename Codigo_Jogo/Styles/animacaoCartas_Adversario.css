@@ -1,0 +1,120 @@
+:root {
+    --posRight_Carta5: 0;
+    --posRight_Carta4: 0;
+    --posRight_Carta3: 0;
+    --posRight_Carta2: 0;
+    --posRight_Carta1: 0;
+
+    --posTop_Carta: 180;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;  
+}
+
+.escolher_carta_5_Adversario {
+    animation: carta_5_AdversarioMove 4s ease forwards;
+}
+
+.escolher_carta_4_Adversario {
+    animation: carta_4_AdversarioMove 4s ease forwards;
+}
+
+.escolher_carta_3_Adversario {
+    animation: carta_3_AdversarioMove 4s ease forwards;
+}
+
+.escolher_carta_2_Adversario {
+    animation: carta_2_AdversarioMove 4s ease forwards;
+}
+
+.escolher_carta_1_Adversario {
+    animation: carta_1_AdversarioMove 4s ease forwards;
+}
+
+@keyframes carta_5_AdversarioMove {
+    0% {
+        top: 0;
+        right: 0;
+    }
+
+    50% {
+        top: calc(var(--posTop_Carta)*1px + 20px);
+        right: 0px;
+    }
+
+    100% {
+        top: calc(var(--posTop_Carta)*1px + 20px);
+        right: calc(var(--posRight_Carta5)*1px - 12px);
+    }
+}
+
+@keyframes carta_4_AdversarioMove {
+    0% {
+        top: 0;
+        right: 0;
+    }
+
+    50% {
+        top: calc(var(--posTop_Carta)*1px + 20px);
+        right: 0px;
+    }
+
+    100% {
+        top: calc(var(--posTop_Carta)*1px + 20px);
+        right: calc(var(--posRight_Carta4)*1px - 12px);
+    }
+}
+
+@keyframes carta_3_AdversarioMove {
+    0% {
+        top: 0;
+        right: 0;
+    }
+
+    50% {
+        top: calc(var(--posTop_Carta)*1px + 20px);
+        right: 0px;
+    }
+
+    100% {
+        top: calc(var(--posTop_Carta)*1px + 20px);
+        right: calc(var(--posRight_Carta3)*1px - 12px);
+    }
+}
+
+@keyframes carta_2_AdversarioMove {
+    0% {
+        top: 0;
+        right: 0;
+    }
+
+    50% {
+        top: calc(var(--posTop_Carta)*1px + 20px);
+        right: 0px;
+    }
+
+    100% {
+        top: calc(var(--posTop_Carta)*1px + 20px);
+        right: calc(var(--posRight_Carta2)*1px - 12px);
+    }
+}
+
+@keyframes carta_1_AdversarioMove {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: calc(var(--posTop_Carta)*1px + 20px);
+        right: 0px;
+    }
+
+    100% {
+        top: calc(var(--posTop_Carta)*1px + 20px);
+        right: calc(var(--posRight_Carta1)*1px - 12px);
+    }
+}
