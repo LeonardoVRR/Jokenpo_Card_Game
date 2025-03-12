@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/assets/images/icon/pedra-papel-tesoura.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/animations/animacaoCartas_Adversario.css">
+    <link rel="stylesheet" href="./src/css/animations/animationScreenGame.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Jokenpo</title>
+</head>
+<body>
+    <main class="TelaJogo">
+        
+            <div class="TelaJogo__mesaAdversario">
+            </div>
+            
+            <div class="TelaJogo__arenaCartas">
+                <div class="containerAdversario">
+                    <div class="campoAdversario">
+                    </div>
+                    <h1>Enemy <br> Area</h1>
+                </div>
+
+                <div class="comprarCartas"><button class="btnComprarCartas"><img src="./src/assets/images/card front side/baralhoCartas.png" alt="" draggable="false"></button></div>
+
+                <div class="containerPlayer">
+                    <div class="campoPlayer" data-allowed = "permitido">
+                    </div>
+                    <h1>Player<br>Area</h1>
+                </div>
+
+                <div class="TelaJogo__botoes">
+                    <button id="btnIniciarPartida"><img src="./src/assets/images/buttons/Btn_V08.png" alt="" class="btnIniciarIMG" draggable="false">
+                        <h1>INICIAR</h1>
+                    </button>
+        
+                    <button id="btnIniciarProxPartida"><img src="./src/assets/images/buttons/Btn_V08.png" alt="" class="btnProxPartidaIMG" draggable="false">
+                        <h1>PROXIMA PARTIDA</h1>
+                    </button>
+                </div>
+            </div>
+
+            <div class="TelaJogo__mesaPlayer">
+            </div>
+
+            <div class="lixeiraCartas">
+                <p>Lixeira</p>
+            </div>
+
+            <div class="PlacarPartidas">
+                <img src="./src/assets/images/game score/game_score_frame 2.png" alt="" draggable="false">
+                <h1>Score</h1>
+                <div class="PlacarPartida_pontuacao">
+                    <p class="qtdVitorias">Victories: 0</p>
+                    <p class="qtdEmpates">Draws: 0</p>
+                    <p class="qtdDerrotas">Defeats: 0</p>
+                </div>
+            </div>
+
+            <div class="musicControler">
+                <div class="controlesPlayerMusic">
+                    <button class="TelaJogo__btnMusica mudo">
+                        <img src="./src/assets/images/music controls/SoundOff/Default@2x.png" alt="" draggable="false">
+                        <audio src="./src/assets/sounds/music_pack_1/Stream Loops 2024 (1).ogg" id="gameMusic" loop></audio>
+                    </button>
+                    <button class="proxMusic">
+                        <img src="./src/assets/images/music controls/ArrowRight/Default@2x.png" alt="">
+                    </button>
+                    <button class="prevMusic">
+                        <img src="./src/assets/images/music controls/ArrowLeft/Default@2x.png" alt="">
+                    </button>
+
+                </div>
+                <div class="music_volume_control">
+                    <input type="range" id="music_volume_control" min="0" max="100" value="20">
+                    <p class="volumeMusicaAtual">20%</p>
+                </div>
+            </div>
+        
+    </main>
+
+    <script src="./src/javascript/comprarCartas.js"></script>
+    <script src="./src/javascript/configuracoesPartida.js"></script>
+    <script src="./src/javascript/cartaSelecionadaPlayer.js"></script>
+    <script src="./src/javascript/cartaSelecionadaAdversario.js"></script>
+    <script src="./src/javascript/Music_config.js"></script>
+    
+</body>
+</html>
